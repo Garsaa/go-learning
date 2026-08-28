@@ -30,3 +30,5 @@ Projeto simples para aprender a sintaxe de Go.
         * -cache: Apaga o cache global de compilação
         * -testcache: Invalida os resultados armazenados de testes, executando os testes novamente sem reutilizar resultado nenhum
         * -cache -testcache -modcache: combina tudo, da pra ver oq seria deletado com isso usando go clean -n
+
+**go mod why (nome-do-modulo)
