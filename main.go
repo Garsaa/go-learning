@@ -1,8 +1,15 @@
 package main
 
-// Calculadora "github.com/Garsaa/go-learning/calculadora"
+import (
+	"fmt"
+	calculadora "go-learning/calculadora"
+
+	uuid "github.com/google/uuid"
+)
 
 func main() {
-	// var b int = Calculadora.Somar(2, 4)
-	// fmt.Printf("Hello, World: %d:", b)
+	var a = calculadora.Somar(2, 3)
+	uuid.DisableRandPool()
+	fmt.Println("Hello, World!")
+	fmt.Println("The sum is:", a)
 }

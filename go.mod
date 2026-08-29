@@ -1,3 +1,5 @@
-module github.com/Garsaa/go-learning
+module go-learning
 
-go 1.26.1
+go 1.25.10
+
+require github.com/google/uuid v1.6.0

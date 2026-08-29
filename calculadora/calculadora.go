@@ -1,13 +1,5 @@
-package main
-
-import (
-	"fmt"
-)
+package calculadora
 
 func Somar(a int, b int) int {
 	return a + b
-}
-
-func main() {
-	fmt.Printf("something")
 }
