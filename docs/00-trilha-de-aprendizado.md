@@ -45,8 +45,7 @@ Estude:
 - [x] Inferência de tipos.
 - [x] Constantes tipadas e não tipadas.
 - [x] `iota` e quando ele é apropriado.
-- [x] Escopo de pacote, função e bloco.
-- [] Shadowing de variáveis.
+- [x] Escopo de pacote, função e bloco e Shadowing de variáveis.
 - [] Zero value de cada categoria de tipo.
 
 Pratique:

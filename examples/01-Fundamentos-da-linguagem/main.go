@@ -8,4 +8,5 @@ package main
 func main() {
 	firstStep()
 	SecondStep()
+	thirdStep()
 }
