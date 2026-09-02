@@ -3,40 +3,11 @@
 Esta é a ordem principal de estudo do repositório. Ela combina fundamentos da
 linguagem, prática contínua, biblioteca padrão, concorrência e backend.
 
-O objetivo não é apenas “ver” cada item. Para concluir um tópico, é preciso
-conseguir explicá-lo, escrever um exemplo sem copiar e usá-lo em um exercício.
-
-Nos exemplos de terminal, blocos **PowerShell e Bash** possuem comandos
-idênticos nos dois shells e usam o identificador Markdown genérico `shell`.
-Diferenças entre Windows e Linux aparecem em blocos separados.
-
-## Como usar esta trilha
-
-Para cada tópico:
-
-1. Leia uma introdução curta e consulte a documentação oficial.
-2. Escreva uma explicação com suas palavras em `docs/`.
-3. Crie um exemplo mínimo em `examples/<fase>/<topico>`.
-4. Faça os exercícios sem olhar uma solução pronta.
-5. Escreva testes desde o começo, mesmo antes da etapa de testes avançados.
-6. Aplique o assunto no projeto indicado para a fase.
-7. Marque o tópico como concluído somente ao cumprir o critério de saída.
-
-Use esta rotina antes de cada commit:
-
-**PowerShell e Bash:**
-
-```shell
-go fmt ./...
-go vet ./...
-go test ./...
-```
-
-## Visão geral
+## Visão geral - Sumário
 
 | Fase | Tópicos | Projeto de consolidação |
 |---|---|---|
-| 0. Ferramentas | Toolchain, módulos e organização | Calculadora inicial |
+| 0. Ferramentas | Toolchain, módulos e organização |
 | 1. Fundamentos | 1–5 | Conversor de unidades |
 | 2. Dados e memória | 6–10 | Analisador de texto |
 | 3. Abstração idiomática | 11–14 | Calculadora como biblioteca e CLI |
@@ -45,16 +16,9 @@ go test ./...
 | 6. Execução e diagnóstico | 20 | Analisar os projetos anteriores |
 | 7. Backend | 21 | API de tarefas com banco de dados |
 
-As etapas são cumulativas. A biblioteca padrão e os testes aparecem durante
-toda a trilha; os tópicos 15 e 16 representam um estudo mais sistemático deles.
-
 ---
 
 ## Fase 0 — Toolchain, módulos e organização
-
-Status: **concluída em nível introdutório**.
-
-Revise conforme a necessidade:
 
 - [x] Instalação e versão do Go.
 - [x] `go run`, `go build` e `go install`.
@@ -65,11 +29,7 @@ Revise conforme a necessidade:
 - [x] `go get`, `go mod tidy`, `graph`, `why` e `verify`.
 - [x] Padrões `.`, `./...` e `all`.
 - [x] Organização básica de um módulo.
-
 Material: [Toolchain e comandos úteis](00-toolchain.md).
-
-Critério de saída: criar um módulo do zero, adicionar um pacote, consumir esse
-pacote em um comando, formatar, testar e compilar sem consultar um tutorial.
 
 ---
 
@@ -78,17 +38,16 @@ pacote em um comando, formatar, testar e compilar sem consultar um tutorial.
 ### 1. Estrutura, variáveis, constantes e zero values
 
 Estude:
-
-- Estrutura de um arquivo Go: `package`, `import` e declarações.
-- `package main` e `func main()`.
-- Declaração com `var` e declaração curta com `:=`.
-- Declarações agrupadas.
-- Inferência de tipos.
-- Constantes tipadas e não tipadas.
-- `iota` e quando ele é apropriado.
-- Escopo de pacote, função e bloco.
-- Shadowing de variáveis.
-- Zero value de cada categoria de tipo.
+- [x] Estrutura de um arquivo Go: `package`, `import` e declarações.
+- [x] `package main` e `func main()`.
+- [x] Declaração com `var` e declaração curta com `:=`.
+- [x] Declarações agrupadas.
+- [x] Inferência de tipos.
+- [x] Constantes tipadas e não tipadas.
+- [x] `iota` e quando ele é apropriado.
+- [x] Escopo de pacote, função e bloco.
+- [x] Shadowing de variáveis.
+- [x] Zero value de cada categoria de tipo.
 
 Pratique:
 
