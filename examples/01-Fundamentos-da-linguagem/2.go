@@ -18,7 +18,7 @@ func SecondStep() {
 	if fruta := "Melancia"; fruta == "Melancia" {
 		// Apesar de ter 1 variável em nível de pacote com esse mesmo identificador
 		// pode-se declarar com := uma outra de mesmo nome, quando se faz shadowing
-		// a variável do menor nível verá a declaração de seu nível e assim sussetivamente
+		// a variável do menor nível verá a declaração de seu nível e assim sucessivamente
 		// sempre se olha apra o nível atual e vai indo para cima!
 		versao := "332"
 		if fruta == "Melancia" {
