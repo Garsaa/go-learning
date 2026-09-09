@@ -1,12 +1,11 @@
+// zero values das principais categorias de tipos em Go.
 package main
 
 import "fmt"
 
-// thirdStep demonstra os zero values das principais categorias de tipos em Go.
-//
 // Zero value é o valor que uma VARIÁVEL recebe automaticamente quando é
-// declarada sem uma inicialização explícita. Constantes sempre precisam ter
-// um valor definido.
+// declarada sem uma inicialização explícita. Constantes sempre precisam
+// ter um valor definido para inicializar.
 func thirdStep() {
 	// Booleanos recebem false.
 	var booleano bool
@@ -45,6 +44,8 @@ func thirdStep() {
 	var operacao func(int, int) int
 	var qualquerCoisa any
 
+	// nil representa a ausência de um valor, referência ou estrutura interna para determinados tipos.
+	// Ele é parecido com null, mas é restrito a tipos que podem naturalmente representar essa ausência.
 	fmt.Println("\n--- Tipos cujo zero value é nil ---")
 	fmt.Printf("ponteiro:  %v; é nil? %t\n", ponteiro, ponteiro == nil)
 	fmt.Printf("slice:     %v; é nil? %t\n", numeros, numeros == nil)

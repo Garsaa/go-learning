@@ -17,8 +17,9 @@ entre Windows e Linux, cada shell recebe seu próprio exemplo.
 
 ## Trilha de aprendizagem
 
-A ordem completa dos estudos, os exercícios e os critérios para avançar estão
-em [Trilha de aprendizagem](docs/01-trilha-de-aprendizado.md).
+A ordem dos estudos e os critérios para avançar estão na
+[Trilha de aprendizagem](docs/00-trilha-de-aprendizado.md). Os exercícios e
+projetos ficam em [Práticas e projetos](docs/01-praticas-e-projetos.md).
 
 Progresso geral:
 
@@ -34,8 +35,9 @@ Progresso geral:
 
 ## Documentação
 
-- [Toolchain e comandos úteis](docs/00-toolchain.md)
-- [Trilha de aprendizagem](docs/01-trilha-de-aprendizado.md)
+- [Toolchain e comandos úteis](docs/01-toolchain.md)
+- [Trilha de aprendizagem](docs/00-trilha-de-aprendizado.md)
+- [Práticas e projetos](docs/01-praticas-e-projetos.md)
 
 ## Organização do repositório
 
