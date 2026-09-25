@@ -19,7 +19,7 @@ ficam em [Práticas e projetos de Go](01-praticas-e-projetos.md).
 
 ---
 
-## Fase 0 — Toolchain, módulos e organização
+## [X] Fase 0 — Toolchain, módulos e organização
 
 - [x] Instalação e versão do Go.
 - [x] `go run`, `go build` e `go install`.
@@ -53,9 +53,8 @@ Estude:
 
 Estude:
 
-- [ ] `bool`.
-- [ ] Inteiros com e sem sinal: `int`, `int8`…`uint64`.
-- [ ] `uintptr` apenas conceitualmente.
+- [X] `bool`.
+- [ ] Inteiros com e sem sinal: `int`, `int8`…`uint64`, `uintptr` .
 - [ ] `float32`, `float64`, `complex64` e `complex128`.
 - [ ] `string`, literais interpretados e raw strings.
 - [ ] `byte` como alias de `uint8`.

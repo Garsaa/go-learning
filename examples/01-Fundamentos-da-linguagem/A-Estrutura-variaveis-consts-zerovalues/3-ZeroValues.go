@@ -6,7 +6,7 @@ import "fmt"
 // Zero value é o valor que uma VARIÁVEL recebe automaticamente quando é
 // declarada sem uma inicialização explícita. Constantes sempre precisam
 // ter um valor definido para inicializar.
-func thirdStep() {
+func zeroValues() {
 	// Booleanos recebem false.
 	var booleano bool
 

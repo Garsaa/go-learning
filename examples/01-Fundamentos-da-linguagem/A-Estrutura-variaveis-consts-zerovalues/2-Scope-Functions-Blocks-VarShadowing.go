@@ -6,9 +6,9 @@ import "fmt"
 
 //declarações de variáveis e constantes podem ser acessadas em blocos inferiores/internos a blocos mas não exteriores
 
-func SecondStep() {
+func packagesAndScope() {
 	// Da pra declarar variável com declaração curta no if
-	if idade2, idade := firstStep(), 2; idade > 11 {
+	if idade2, idade := vars(), 2; idade > 11 {
 		// Não tem valor truthy ou falsy em Go, tem que ser booleano MESMO pra ser usado de condition
 	} else if idade2 == 2 {
 

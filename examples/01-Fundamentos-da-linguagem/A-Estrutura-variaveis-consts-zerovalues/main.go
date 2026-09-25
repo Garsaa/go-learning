@@ -6,7 +6,7 @@
 package main
 
 func main() {
-	firstStep()
-	SecondStep()
-	thirdStep()
+	vars()
+	packagesAndScope()
+	zeroValues()
 }

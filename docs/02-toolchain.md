@@ -1,18 +1,31 @@
 # Toolchain e comandos úteis
 
+## Resumo rápido
+
+Este arquivo apresenta os comandos do Go e explica como o toolchain organiza,
+executa, compila, testa e inspeciona um projeto.
+
+**Comandos úteis na rotina:**
+
+```shell
+go run ./cmd/calculadora # executa o programa
+go fmt ./...             # formata o código
+go test ./...            # roda os testes do módulo
+go vet ./...             # procura erros suspeitos
+go build ./...           # verifica e compila os pacotes
+go mod tidy              # sincroniza dependências após mudanças nos imports
+go doc fmt.Println       # consulta a documentação de um símbolo
+```
+
+O documento também explica módulos e pacotes, arquivos `go.mod` e `go.sum`,
+nomes exportados, convenções e sufixos por sistema operacional/arquitetura,
+padrões de pacotes e a diferença entre executar, compilar e instalar comandos.
+Apresenta ainda testes e cobertura, dependências, inspeção e documentação de
+pacotes, configuração do ambiente, caches e redirecionamento do terminal.
+
 Este documento reúne a referência de toolchain.
 Não precisa decorar todos os comandos: `go help <comando>` é comum utilizar.
 Toolchain é o conjunto de ferramentas usadas via CLI para buildar, compilar, analisar, executar, transformar, testar código go(geralmente) também existem ferramentas mais baixo nível nesse conjunto
-
-## Convenção dos exemplos de terminal
-
-Os blocos marcados como **PowerShell e Bash** funcionam da mesma forma nos dois
-shells. Eles usam `shell` como identificador Markdown por ser um nome genérico
-para comandos de terminal. Muitos desses comandos também funcionam em Zsh e
-outros shells compatíveis, mas Bash é a referência de Linux deste documento.
-
-Quando nomes de executáveis, caminhos ou comandos do sistema operacional
-diferirem, serão mostrados blocos separados `powershell` e `bash`.
 
 ## Modelo mental: módulo e pacote
 
@@ -49,6 +62,8 @@ Sufixos com comportamento especial:
 - `nome_linux.go`: incluído quando `GOOS=linux`.
 - `nome_amd64.go`: incluído quando `GOARCH=amd64`.
 - `nome_windows_amd64.go`: exige simultaneamente Windows e AMD64.
+
+Então da pra específicar OS e Arquitetura do processador
 
 Exemplos de valores possíveis incluem `windows`, `linux` e `darwin` para
 `GOOS`, e `amd64`, `arm64` e `riscv64` para `GOARCH`.

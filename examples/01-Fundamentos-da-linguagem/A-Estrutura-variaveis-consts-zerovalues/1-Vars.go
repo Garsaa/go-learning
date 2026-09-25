@@ -12,11 +12,11 @@ const versao string = "212"
 // O escopo das variáveis em go é definido por bloco
 // seja um pacote, uma função, um if ou enfim.
 
-//go também pode inferir o tipo, não eh necessário explícitar]
+//go também pode inferir o tipo, não eh necessário explícitar
 //uma vez declarado, o tipo não muda, Go é estáticamente tipado
 
 // zero value eh o valor q 1 variável recebe quando não é inicializada.
-func firstStep() int {
+func vars() int {
 	// dentro de funções da pra fazer declaração curta, essas são sempre vars
 	nome, idade := "gabriel", 23
 	// da pra deixar o go inferir o tipo
